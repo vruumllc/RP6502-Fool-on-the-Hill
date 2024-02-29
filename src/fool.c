@@ -11,8 +11,8 @@
 
 #define SPRITE_CONFIG_SIZE sizeof(vga_mode4_sprite_t)
 #define SPRITE_CONFIG 0xF000 // sprite config address
-#define RADIO_DATA 0x0000 // (actually 0x10000)
-#define ALTAIR_DATA 0x2000 // (actually 0x12000)
+#define ALTAIR_DATA 0x0000 // (actually 0x10000)
+#define RADIO_DATA 0x8000 // (actually 0x18000)
 #define NUM_SPRITES 2
 
 #define PSG_CONFIG 0xFF00 // programmable sound generator config address
@@ -212,22 +212,22 @@ void init_sprites()
     uint8_t i;    // sprite index
     uint16_t ptr; // config address
 
-    // init radio
-    i = 0;
-    ptr = SPRITE_CONFIG + i*SPRITE_CONFIG_SIZE;
-    sprites[i].config_ptr = ptr;
-    sprites[i].data_ptr = RADIO_DATA;
-    sprites[i].size = 64;
-    sprites[i].log_size = 6;
-    init_sprite_config(i);
-
     // init altair
-    i = 1;
+    i = 0;
     ptr = SPRITE_CONFIG + i*SPRITE_CONFIG_SIZE;
     sprites[i].config_ptr = ptr;
     sprites[i].data_ptr = ALTAIR_DATA;
     sprites[i].size = 128;
     sprites[i].log_size = 7;
+    init_sprite_config(i);
+
+    // init radio
+    i = 1;
+    ptr = SPRITE_CONFIG + i*SPRITE_CONFIG_SIZE;
+    sprites[i].config_ptr = ptr;
+    sprites[i].data_ptr = RADIO_DATA;
+    sprites[i].size = 64;
+    sprites[i].log_size = 6;
     init_sprite_config(i);
 
     // plane=1, sprite mode
