@@ -1,7 +1,7 @@
 # RP6502-Fool-on-the-Hill
-A tribute to [the first great microcomputer hack](https://www.digibarn.com/collections/weirdstuff/altair-sheetmusic/index.html)!
-
 <img src="altair.png" align=left width="200px"/>
+
+A tribute to [the first great microcomputer hack](https://www.digibarn.com/collections/weirdstuff/altair-sheetmusic/index.html)!
 
 On April 16, 1975, Homebrew Computer Club member Steve Dompier used an Altair to play the Beatle's ['Fool in the Hill'](https://www.digibarn.com/collections/audio/digibarn-radio/altair-music-erik-klein/foolonthehill.wav) via EM interference on an AM radio.
 
