@@ -1,5 +1,5 @@
 # RP6502-Fool-on-the-Hill
-<img src="images/altair.png" align=left width="200px"/>
+<img src="altair.png" align=left width="200px"/>
 <img src="images/radio.png" align=right width="200px"/>
 
 A tribute to [the first great microcomputer hack](https://www.digibarn.com/collections/weirdstuff/altair-sheetmusic/index.html)!
