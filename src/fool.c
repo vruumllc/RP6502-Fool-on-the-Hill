@@ -187,8 +187,6 @@ void init_sprite_config(uint8_t i)
     sprites[i].x = x;
     sprites[i].y = y;
 
-    printf("x=%d, y=%d\n", x, y);
-
     if (((uint32_t)rand() * 2) >> 15)
         vectors[i].xv = 1;
     else
@@ -281,7 +279,7 @@ void main(void)
     puts("A tribute to the first great microcomputer hack!");
     puts("");
     puts("On April 16, 1975, Homebrew Computer Club member Steve Dompier used an Altair");
-    puts("to play the Beatle's 'Fool in the Hill' via EM interference on an AM radio.");
+    puts("to play the Beatle's 'Fool on the Hill' via EM interference on an AM radio.");
     puts("");
     puts("I wanted my first song for the RP6502 to be 'Fool on the Hill' as well. Enjoy!");
     puts("");
